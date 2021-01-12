@@ -1,0 +1,1 @@
+//document.querySelector('.out1').innerHTML=1235;

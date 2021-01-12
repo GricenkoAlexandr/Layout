@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #c7df9b ,#bb60a7);
+}
+
+section .color{
+    position: absolute;
+    filter: blur(150px);
+
+}
+
+section .color:nth-child(1) {
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background:#cec0ce;
+}
+
+section .color:nth-child(2) {
+    bottom: -150px;
+    left:100px;
+    width: 500px;
+    height: 500px;
+    background:#caecec;
+}
+
+section .color:nth-child(3) {
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    background:#a0c598;
+}
+
+.box {
+    position: relative;
+}
+
+.box .squarey {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: animatey 10s linear infinite;
+    animation-delay: calc(-1s*var(--i));
+}
+
+@keyframes animatey {
+    0%,100%
+    {
+        transform: translateY(-60px);
+    }
+    50%
+    {
+        transform: translateY(60px);
+    }
+
+}
+
+.box .squarex {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: animatex 10s linear infinite;
+    animation-delay: calc(-1s*var(--i));
+}
+
+@keyframes animatex {
+    0%,100%
+    {
+        transform: translateX(-80px);
+    }
+    50%
+    {
+        transform: translateX(80px);
+    }
+
+}
+
+.box .squarey:nth-child(1) {
+    top: -300px;
+    right: -320px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.box .squarey:nth-child(2) {
+    top:-100px;
+    right: 370px;
+    width: 160px;
+    height: 250px;
+    z-index: 2;
+}
+
+.box .squarey:nth-child(3) {
+    top:60px;
+    right: -300px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.box .squarex:nth-child(4) {
+    top:320px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.box .squarex:nth-child(5) {
+    top:-450px;
+    right: 150px;
+    width: 120px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.container {
+    position: absolute;
+    top: -350px;
+    left: -400px;
+    width: 650px;
+    min-height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form h1{
+    color:rgb(235, 10, 160);
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.form h2{
+    position: relative;
+    color:#fff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+
+.attText p{
+    font-size: 14px;
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:red;
+    margin-bottom: 15px;
+    border: 1px solid rgb(239, 239, 241);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    background:rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color:#fff;
+}
+
+
+.inputBox input::placeholder {
+    color: #ffffff;
+    text-align: center;
+}
+
+.inputBox input[type="button"] {
+    color: #666;
+    background:#fff;
+    max-width: 200px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.forget {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.forget a{
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.titleAns{
+    color: #4024dd;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #045704;
+}

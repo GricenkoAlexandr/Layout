@@ -1,0 +1,8 @@
+body {
+
+    color:red;
+    font-size: 78px;
+    background-image: linear-gradient(90deg, rgb(26, 241, 91),rgb(11, 26, 167));
+    height: 100vh;
+    text-shadow: 5px 4px 3px #999;
+}
