@@ -204,6 +204,14 @@ section .color:nth-child(3) {
     margin-top: 20px;
 }
 
+.inpName {
+    text-align: center;
+}
+
+.inpPass {
+    text-align: center;
+}
+
 .inputBox input {
     width: 100%;
     background:rgba(255, 255, 255, 0.2);
@@ -244,13 +252,12 @@ section .color:nth-child(3) {
     text-align: left;
 }
 
-.forget a{
+.forget a {
     color: #fff;
     font-weight: 600;
-
 }
 
-.titleAns{
+.titleAns {
     color: #4024dd;
     font-size: 32px;
     font-weight: 700;
